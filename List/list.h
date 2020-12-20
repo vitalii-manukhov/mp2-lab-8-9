@@ -121,7 +121,7 @@ TList<T>::TList(const TList<T>& _v)
 
   while (i != nullptr) // копируем список
   {
-    j = new TListElem(*i);
+    j = new TListElem<T>(*i);
     j->SetNext(0);
     if (p != nullptr)
     {
